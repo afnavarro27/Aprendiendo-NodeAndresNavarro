@@ -1,13 +1,16 @@
 const express = require('express')
 
 const app = express()
-const calc = require('../notas/MiCalculadora')
-app.set('view engine','ejs');
+//const PORT = process.env.PORT || 9000;
+app.set('views engine','ejs')
 const path = require('path');
+app.set('views',path.join(__dirname,'/views'))
+
+
 
 app.get("/",(req, res) => {
-    res.send("Hola")
-    console.log(calc.Sumar(1,2))
+    console.log(path.__dirname);
+    res.render('pages/index')
     
 })
 

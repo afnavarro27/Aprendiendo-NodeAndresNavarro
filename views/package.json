@@ -15,15 +15,16 @@
   "name": "node",
   "version": "1.0.0",
   "description": "mi primer proyecto en node",
-  "dev": "index2.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Alejoml07/AprendiendoNodejsAlejandro.git"
+    "url": "https://github.com/afnavarro27/Aprendiendo-NodeAndresNavarro.git"
   },
   "scripts": {
-    "dev": "nodemon index2.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
-  "author": "Alejandro",
+  "author": "Felipe",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.19"
