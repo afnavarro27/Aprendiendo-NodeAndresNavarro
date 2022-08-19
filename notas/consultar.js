@@ -1,4 +1,4 @@
-var axios = require('axios');
+ar axios = require('axios');
 
 var data = JSON.stringify({
     "collection": "APRENDICES",

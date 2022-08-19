@@ -1,7 +1,9 @@
 const express = require('express')
 
 const app = express()
-const calc = require('./MiCalculadora')
+const calc = require('../notas/MiCalculadora')
+app.set('view engine','ejs');
+const path = require('path');
 
 app.get("/",(req, res) => {
     res.send("Hola")
