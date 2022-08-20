@@ -12,8 +12,28 @@ app.set('views',path.join(__dirname,'/views'))
 
 
 app.get("/",(req, res) => {
-    //console.log(path.__dirname);
-    res.render('pages/index')
+
+    let gato = ['michi','peludo',1];
+    let user = [
+        nombre = 'felipe',
+        apellido ='Navarro',
+        edad = '19'
+    ]
+
+    res.render('pages/index',
+    {
+        gat:gato,
+        usuario:user
+    }
+       
+    );
+
+    /*var nombre='Felipe Navarro'
+    res.render('pages/index',
+    {name:nombre}
+    );*/
+
+    //res.render('pages/index')
     
 })
 
